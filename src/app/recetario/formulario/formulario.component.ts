@@ -77,12 +77,23 @@ export class FormularioComponent implements OnInit {
    
     //llamar Servicio
     this.recetasService.crear( receta ).subscribe( datos => {
-      console.debug('Nuevo pokemon creado en json-server %o', datos);
+      console.debug('Nueva receta creada en json-server %o', datos);
       },
       (error) => {
         console.debug('Error %o', error);
       }
     );
+
+    /*
+    //llamar Servicio para listar con la receta nueva:
+    this.recetasService.getAll().subscribe( datos => {
+      console.debug('Lista de todas las recetas disponibles en json-server %o', datos);
+      },
+      (error) => {
+        console.debug('Error %o', error);
+      }
+    );
+    */
 
     //Resetar Formulario e Inicializar
     this.formulario.reset({

@@ -117,7 +117,7 @@
       "imagen": "https://www.miscosillasdecocina.com/wp-content/uploads/2014/02/bacalao-pilpil-e1491084486535.jpg",
       "likes": "32",
       "isGlutenFree": true,
-      "cocinero": "Karlos Argiñano",
+      "cocinero": "Karlos Arguiñano",
       "ingredientes": [
         "bacalao",
         "aceite",
@@ -236,6 +236,23 @@
         "esparragos",
         "huevos",
         "perejil"
+      ]
+    },
+    {
+      "id": 10,
+      "nombre": "Tostadas de Carnaval",
+      "imagen": "https://vod-hogarmania.atresmedia.com/hogarmania/images/images01/2013/06/13/5c00e43316334d000191932a/1239x697.jpg",
+      "likes": 0,
+      "cocinero": "Eva Arguiñano",
+      "descripcion": "Pon la leche y la nata a calentar con la rama de canela y 120 gramos de azúcar. Retira del fuego y viértela sobre las rebanadas de pan en un recipiente hondo. Deja que se empapen bien. En una sartén con abundante aceite, añade un trozo de cáscara de limón. Escurre un poco las torrijas, pásalas por huevo batido y fríelas en la sartén. Retira a un plato con papel absorbente para eliminar el exceso de aceite. Mezcla el resto de azúcar con la canela en polvo y espolvorea por encima de las torrijas",
+      "isGlutenFree": false,
+      "ingredientes": [
+        "rebanadas de pan",
+        "leche",
+        "azucar",
+        "canela",
+        "huevo",
+        "limon"
       ]
     }
   ],
