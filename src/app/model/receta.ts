@@ -18,7 +18,7 @@ export class Receta {
     ){
 
         console.log('Receta constructor');
-        this.id = -1;
+        this.id = 0;
         this.nombre = nombre;
         this.imagen = 'assets/imgs/receta_default.jpg';
         this.likes = 0;
@@ -36,7 +36,7 @@ export class Receta {
     mapperJson( json:any ){
        this.id = json.id;
        this.nombre = json.nombre;
-       this.imagen = json.foto;
+       this.imagen = json.imagen;
        this.likes =json.likes;
        this.cocinero = json.cocinero;
        this.descripcion = json.descripcion;

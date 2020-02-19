@@ -34,7 +34,7 @@ export class FormularioComponent implements OnInit {
     this.formulario = this.fb.group({
       //FormControl(input) => ['value', [Validaciones] ]
       nombre : ['', [Validators.required, Validators.minLength(2)] ],
-      cocinero : ['',[Validators.minLength(5)] ],
+      cocinero : ['',[Validators.required, Validators.minLength(5)] ],
       descripcion : ['', [Validators.required, Validators.minLength(100)] ],
       gluten : [ "true" , Validators.required],
       imagen : ['assets/imgs/receta_default.jpg', Validators.required],
@@ -76,7 +76,13 @@ export class FormularioComponent implements OnInit {
     let receta = this.mapearFormularioReceta(this.formulario);
    
     //llamar Servicio
-    this.recetasService.crear( receta );
+    this.recetasService.crear( receta ).subscribe( datos => {
+      console.debug('Nuevo pokemon creado en json-server %o', datos);
+      },
+      (error) => {
+        console.debug('Error %o', error);
+      }
+    );
 
     //Resetar Formulario e Inicializar
     this.formulario.reset({

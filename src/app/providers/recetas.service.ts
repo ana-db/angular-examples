@@ -29,8 +29,10 @@ export class RecetasService {
    * Crear Nueva Receta
    * @param receta : Receta nueva
    */
-  crear( receta: Receta ):void{
+  crear( receta: Receta ):Observable<any>{
     console.log('RecetasService crear %o', receta );
+    let url = `${GLOBAL.endpoint}/recetas`;
+    return this.http.post<Receta>(url,receta);
     //this.recetas.unshift(receta);
   }
 
